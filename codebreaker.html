@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CodeBreaker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>CodeBreaker</h1>
+      <p>The computer chooses randomly 3 numbers between 1 and 9. <br>
+        Guess all 3 right numbers in the right order. You have 15 tries.</p>
+      <p>Good luck!</p>
+      <div class="button-container">
+        <button class="codebreaker-button" onclick="startGame();">
+          Start CodeBreaker
+        </button>
+      </div>
+      <div id="game-container" style="display: none;"> <!-- Container for the game -->
+        <div id="game-results"></div>
+        <input type="text" id="guess-input" placeholder="Enter your guess (111-999)">
+        <button onclick="checkGuess();">Submit Guess</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
